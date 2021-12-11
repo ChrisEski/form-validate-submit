@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(34, 81, 124);
+  display: grid;
+  place-content: center;
+}
+
+.form-wrapper {
+  background-color: rgb(241, 241, 241);
+  width: 400px;
+  /* height: 500px; */
+  padding: 20px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  /* border: 2px solid red; */
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 15px 30px 15px 10px;
+  border: 1px solid rgb(34, 81, 124);
+  border-radius: 5px;
+  font-size: 15px;
+  color: rgb(34, 81, 124);
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+.success .form__input {
+  border: 3px solid green;
+}
+
+.success i.fa-check-circle {
+  display: block;
+  color: green;
+}
+
+.error .form__input {
+  border: 3px solid red;
+}
+
+.error i.fa-exclamation-circle {
+  display: block;
+  color: red;
+}
+
+.error + .form__error-text {
+  display: block;
+}
+
+.input-group .fas {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  display: none;
+}
+
+.form__error-text {
+  text-align: right;
+  color: red;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 15px;
+  display: none;
+}
+
+.form__error-text:last-of-type {
+  margin-bottom: 20px;
+}
+
+.form__btn {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgb(34, 81, 124);
+  background: rgb(45, 115, 182);
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: background 0.15s ease;
+}
+
+.form__btn:hover {
+  cursor: pointer;
+  background: rgb(34, 81, 124);
+}
